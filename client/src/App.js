@@ -8,9 +8,6 @@ function App() {
 
       </div>
       
-      <div className="nav3">
-      world
-      </div>
       <div className="body3">
       world
       </div>
