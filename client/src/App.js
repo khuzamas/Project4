@@ -3,8 +3,18 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Hello World
+    <div className="app">
+      <div className="navbar">
+
+      </div>
+      
+      <div className="nav3">
+      world
+      </div>
+      <div className="body3">
+      world
+      </div>
+      
     </div>
   );
 }
