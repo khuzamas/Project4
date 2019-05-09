@@ -4,9 +4,10 @@ const app = express();
 const mongoose = require('mongoose')
 
 const PORT = process.env.PORT
+const DB = process.env.DB
 
 // Connect Mongoose
-mongoose.connect('mongodb://localhost/project4db',{
+mongoose.connect(DB,{
     useNewUrlParser: true
 })
 .then(()=>{
