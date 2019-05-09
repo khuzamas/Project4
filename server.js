@@ -4,9 +4,10 @@ const app = express();
 const mongoose = require('mongoose')
 
 const PORT = process.env.PORT
+const DB = process.env.DB
 
 // Connect Mongoose
-mongoose.connect('mongodb://localhost/project4db',{
+mongoose.connect(DB,{
     useNewUrlParser: true
 })
 .then(()=>{
@@ -20,10 +21,8 @@ app.use(express.json())
 
 // 
 app.get('/',(req,res)=>{
-    res.send('Hello World')
+    res.send('Hello Azoooooooooz')
 });
-
-
 
 app.listen(PORT, ()=>{
     console.log(`Server started on port ${PORT}`);
