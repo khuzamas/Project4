@@ -24,8 +24,7 @@ const UserSchema = new Schema({
         required: true
     },
     dateofbirth: {
-        type: Date,
-        default: Date.now
+        type: Date
     },
     friend: [{ type: Schema.Types.ObjectId, ref: 'User' }],
     icon: {
