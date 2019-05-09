@@ -31,7 +31,7 @@ app.use('/api/challenges',challenges)
 app.use('/api/tasks',tasks)
 app.use('/api/badges',badges)
 
-// 
+//
 app.get('/',(req,res)=>{
     res.send('Hello Azoooooooooz')
 });
