@@ -9,9 +9,9 @@ const User = require('../../models/user')
 // @desc Get all items
 // @access Public
 router.get('/',(req,res) =>{
-    Item.find()
+    User.find()
     .sort({ date: -1})
-    .then(items => res.json(items))
+    .then(users => res.json(users))
 })
 
 // @route POST api/users
