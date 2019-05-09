@@ -1,37 +1,26 @@
-/* .body{
-  background-color: #083D77;
-  height: 100px;
-} */
-
-/* .body2{
-  background-color: #224870;
-  height: 100px;
-  
-} */
+.app {
+  background-color: #212D40;
+}
 
 .body3{
   background-color: #212D40;
   height: 100px;
 }
 
-/* .nav2{
-  background-color: #E3AC1B;
-  height: 50px;
-} */
-
 .navbar{
-  background-color: #f2be00;
+  background-color: rgba(248, 194, 0);
   height: 50px;
 }
 
-/* .nav4{
-  background-color: #56BCA2;
-  height: 50px;
+.taks {
+  background-color: white;
 }
 
-.nav5{
-  background-color:#BF2C0B;
-  height: 50px;
-} */
+.lead {
+  background-color: white;
+}
 
+.challenges {
+  background-color: white;
+}
 
