@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function SignIn() {
-  return (
-    <div>
-      <form>
+export class SignIn extends Component {
+  render() {
+    return (
+      <div className="card">
+         <form className="card-body">
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>
           <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -15,12 +16,14 @@ function SignIn() {
         </div>
         <div className="form-group form-check">
           <input type="checkbox" className="form-check-input" id="exampleCheck1" />
-          <label className="form-check-label" htmlFor="exampleCheck1">Check me out</label>
+          <label className="form-check-label" htmlFor="exampleCheck1">Remeber Me</label>
         </div>
         <button type="submit" className="btn btn-primary">Submit</button>
       </form>
-    </div>
-  )
+      </div>
+    )
+  }
 }
 
 export default SignIn
+

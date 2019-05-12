@@ -54,7 +54,7 @@ router.post('/',(req,res) =>{
                         JWTSECRET,
                         {expiresIn: 3600},
                         (err, token) => {
-                            if(err) throw err;
+                            if(err) throw err; 
                             res.json({
                                 token,
                                 user
