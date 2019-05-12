@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
+import Header from './components/layouts/Header';
+import Sign from './components/Sign';
+
+
 
 function App() {
   return (
     <div className="app">
-      <div className="navbar">
+    <Header />
+    <Sign  />
+      {/* <div className="navbar">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
             <a className="nav-link" href="home">Home</a>
@@ -23,7 +29,7 @@ function App() {
           Active challenges
         </div>
       </div>
-      
+       */}
     </div>
   );
 }
