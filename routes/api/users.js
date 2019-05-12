@@ -1,5 +1,9 @@
+require('dotenv').config();
 const express = require('express');
 const router = express.Router();
+const bcrypt = require ('bcryptjs')
+const JWTSECRET = process.env.JWTSECRET
+const jwt = require ('jsonwebtoken')
 
 // User model
 const User = require('../../models/user')
@@ -9,24 +13,64 @@ const User = require('../../models/user')
 // @desc Get all items
 // @access Public
 router.get('/',(req,res) =>{
-    Item.find()
+    User.find()
     .sort({ date: -1})
-    .then(items => res.json(items))
+    .then(users => res.json(users))
 })
 
 // @route POST api/users
-// @desc Create a user
+// @desc Create a new user
 // @access Public
 router.post('/',(req,res) =>{
-    const newUser = new User({
-        firstname: req.body.firstname,
-        lastname: req.body.lastname,
-        username: req.body.username,
-        email: req.body.email,
-        password: req.body.password
+
+    // simple Validation!
+
+
+    // see if user exists then create a new one
+    User.findOne({email : req.body.email})
+    .then(user => {
+        if (user){
+            return res.status(400).json({message: 'User already exists'})
+        }
+
+        const newUser = new User({
+            firstname: req.body.firstname,
+            lastname: req.body.lastname,
+            email: req.body.email,
+            password: req.body.password
+        })
+
+        // encrypt password and save the new user
+        bcrypt.genSalt(10, (err,salt) => {
+            bcrypt.hash(newUser.password, salt, (err,hash) => {
+                if(err){
+                    throw err;
+                }
+                newUser.password = hash;
+                newUser.save()
+                .then(user => {
+                    jwt.sign(
+                        {id: user.id},
+                        JWTSECRET,
+                        {expiresIn: 3600},
+                        (err, token) => {
+                            if(err) throw err;
+                            res.json({
+                                token,
+                                user
+                            })
+                        }
+                    )
+                })
+            })
+        })
+        // return jsonwebtoken
+
     })
-    newUser.save()
-    .then(user => res.json(user))
+
+    
+
+    
 })
 
 // @route Delete api/items
