@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="app">
       <div className="navbar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="home">Home</a>
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="home">Home</a>
           </li>
         </ul>
       </div>
@@ -29,3 +29,6 @@ function App() {
 }
 
 export default App;
+
+
+
