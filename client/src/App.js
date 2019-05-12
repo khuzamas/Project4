@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
+import Header from './components/layouts/Header';
+import Sign from './components/Sign';
+
+
 
 function App() {
   return (
     <div className="app">
-      <div className="navbar">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="home">Home</a>
+    <Header />
+    <Sign  />
+      {/* <div className="navbar">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item active">
+            <a className="nav-link" href="home">Home</a>
           </li>
         </ul>
       </div>
@@ -23,7 +29,7 @@ function App() {
           Active challenges
         </div>
       </div>
-      
+       */}
     </div>
   );
 }
