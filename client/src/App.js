@@ -1,40 +1,31 @@
-import React from 'react';
 import './App.css';
+import React, { Component } from 'react'
 import Header from './components/layouts/Header';
 import Sign from './components/Sign';
+import Signup from './components/Signup';
+import UserHome from './components/UserHome';
+import Profile from './components/Profile'
+import Navbar from './components/layouts/Navbar';
+import Challenge from './components/Challenge'
+import {
+  BrowserRouter as Router, Route, Link
+} from 'react-router-dom'
 
-
-
-function App() {
-  return (
-    <div className="app">
-    <Header />
-    <Sign  />
-      {/* <div className="navbar">
-        <ul className="navbar-nav mr-auto">
-          <li className="nav-item active">
-            <a className="nav-link" href="home">Home</a>
-          </li>
-        </ul>
-      </div>
-      
-      <div className="body3">
-        <div className="tasks">
-          Daily tasks
+export default class App extends Component {
+  
+  render() {
+    
+    return (
+      <Router>
+        <div className="app">
+          <Navbar/>
+          {/* <UserHome /> */}
+          <Route path='/userhome' component={UserHome}/>
+          <Route path='/challenge' component={Challenge}/>
+          {/* <Profile/> */}
+          <Route path='/profile' component={Profile}/>
         </div>
-        <div className="lead">
-          Leader board
-        </div>
-        <div className="challenges">
-          Active challenges
-        </div>
-      </div>
-       */}
-    </div>
-  );
+      </Router>
+    )
+  }
 }
-
-export default App;
-
-
-

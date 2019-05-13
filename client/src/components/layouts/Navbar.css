@@ -1,0 +1,25 @@
+.nav-link {
+    display: block;
+    color: white;
+    font-size: 20px;
+}
+
+a:hover {
+    color:gray;
+    text-decoration: none;
+}
+  
+/* A link that is selected */
+a:active {
+    font-weight: bold;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.nav-item {
+    font-family: "Garamond";
+    padding-right: 10px;
+    padding-top: 10px;
+}
