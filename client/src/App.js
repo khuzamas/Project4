@@ -1,8 +1,5 @@
 import './App.css';
 import React, { Component } from 'react'
-import Header from './components/layouts/Header';
-import Sign from './components/Sign';
-import Signup from './components/Signup';
 import UserHome from './components/UserHome';
 import Profile from './components/Profile'
 import Navbar from './components/layouts/Navbar';

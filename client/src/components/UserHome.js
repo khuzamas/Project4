@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-import Navbar from './layouts/Navbar';
 import '../App.css';
 import './UserHome.css'
 import Carousel from 'react-bootstrap/Carousel'
-import Button from 'react-bootstrap/Button'
 import ProgressBar from 'react-bootstrap/ProgressBar'
 import {
     BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend,

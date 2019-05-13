@@ -13,10 +13,55 @@
 
 .user-info {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-evenly; */
 }
 
-/* .user-info-item {
-    margin: 20px;
+.user-info-item {
+    text-align: -webkit-center;
+}
+
+.badge, .program{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    margin-bottom: 40px;
+}
+
+.badge-img, .program-img{
+    margin-right: 20px;
+}
+
+/* .stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: -webkit-auto;
+    width: 400px;
 } */
 
+.weight-chart {
+    width: 400px;
+    height: 50px;
+    /* text-align: -webkit-match-parent; */
+    margin-right: 20px;
+}
+
+.pie-chart {
+    width: 400px;
+    height: 200px;
+    /* text-align: -webkit-center; */
+}
+
+.recharts-surface {
+    /* width: 300px; */
+}
+
+.recharts-wrapper {
+    /* margin: 100;
+    padding: 0; */
+    width: 400px;
+}
