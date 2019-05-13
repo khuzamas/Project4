@@ -25,11 +25,15 @@ const users = require('./routes/api/users');
 const challenges = require('./routes/api/challenges');
 const tasks = require('./routes/api/tasks');
 const badges = require('./routes/api/badges');
+const exercises = require('./routes/api/exercises');
+const program = require('./routes/api/programs');
 const auth = require('./routes/api/auth');
 
 // Use routes
 app.use('/api/users',users)
 app.use('/api/challenges',challenges)
+app.use('/api/exercises',exercises)
+app.use('/api/programs',program)
 app.use('/api/tasks',tasks)
 app.use('/api/badges',badges)
 app.use('/api/auth',auth)

@@ -22,11 +22,10 @@ router.post('/',(req,res) =>{
         name: req.body.name,
         description: req.body.description,
         reward: req.body.reward,
-        category: req.body.category,
-        level: req.body.level,
-        icon: req.body.icon
+        img: req.body.img,
+        exercises: req.body.exercises
     })
-    
+
     newProgram.save()
     .then(program => res.json(program))
 })
