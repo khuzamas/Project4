@@ -1,19 +1,22 @@
 .app {
   background-color: #212D40;
+  height: 800px;
 }
 
 .body3{
-  background-color: #212D40;
-  height: 100px;
+  /* background-color: #212D40; */
+  /* background-color: #122C34; */
+  height: 800px;
 }
 
 .navbar{
-  background-color: rgba(248, 194, 0);
+  /* background-color: rgba(248, 194, 0); */
+  background-color: #F4d35e;
   height: 50px;
 }
 
-.taks {
-  background-color: white;
+.tasks {
+  margin: 20px;
 }
 
 .lead {
@@ -24,3 +27,34 @@
   background-color: white;
 }
 
+.card-body{
+  padding: 0;
+}
+
+
+.check {
+  height: 50px;
+  width: 50px;
+}
+
+.td {
+  height: 55px;
+  width: 100px;
+  padding: 10px;
+}
+
+/* .img {
+  height: 20px;
+  width: 20px;
+  border: 2px black solid;
+  border-radius: 50%;
+  padding: 0;
+} */
+
+.inactive {
+  display: none;
+}
+
+.is-active {
+  display: initial;
+}
