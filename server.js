@@ -8,7 +8,8 @@ const DB = process.env.DB
 
 // Connect Mongoose
 mongoose.connect(DB,{
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useCreateIndex: true
 })
 .then(()=>{
     console.log('MongoDB Connected');
@@ -24,12 +25,14 @@ const users = require('./routes/api/users');
 const challenges = require('./routes/api/challenges');
 const tasks = require('./routes/api/tasks');
 const badges = require('./routes/api/badges');
+const auth = require('./routes/api/auth');
 
 // Use routes
 app.use('/api/users',users)
 app.use('/api/challenges',challenges)
 app.use('/api/tasks',tasks)
 app.use('/api/badges',badges)
+app.use('/api/auth',auth)
 
 //
 app.get('/',(req,res)=>{

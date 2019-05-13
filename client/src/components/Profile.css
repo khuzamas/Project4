@@ -1,0 +1,22 @@
+.user {
+    height: 200px;
+    text-align: -webkit-center;
+    margin-bottom: 30px;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .user-info-item {
+    margin: 20px;
+} */
+

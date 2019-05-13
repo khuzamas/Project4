@@ -1,47 +1,28 @@
 .app {
   background-color: #212D40;
   height: 800px;
+  font-family: "Garamond";
+  color: white;
 }
 
 .body3{
-  /* background-color: #212D40; */
+  background-color: #212D40;
   /* background-color: #122C34; */
-  height: 800px;
+  height: 900px;
+  margin: 0;
 }
+
 
 .navbar{
   /* background-color: rgba(248, 194, 0); */
-  background-color: #F4d35e;
-  height: 50px;
+  /* background-color: #F4d35e; */
+  /* background-color: #dc3545; */
+  background-color: rgb(220,53,69);
+  height: 70px;
+  /* margin: 0; */
+  /* position: fixed; */
 }
 
-.tasks {
-  margin: 20px;
-}
-
-.lead {
-  background-color: white;
-}
-
-.challenges {
-  background-color: white;
-}
-
-.card-body{
-  padding: 0;
-}
-
-
-.check {
-  height: 50px;
-  width: 50px;
-}
-
-.td {
-  height: 55px;
-  width: 100px;
-  padding: 10px;
-}
 
 /* .img {
   height: 20px;
@@ -58,3 +39,8 @@
 .is-active {
   display: initial;
 }
+
+.d-block {
+  height: 350px;
+}
+
