@@ -1,7 +1,7 @@
 const mongoose= require('mongoose')
 const Schema= mongoose.Schema
 
-const programSchema= new Schema({
+const exerciseSchema= new Schema({
     name: {type: String, required: true, unique: true},
     description: {type: String, required: true},
     sets: {type: String, required: true},
@@ -10,5 +10,6 @@ const programSchema= new Schema({
     reward: {type: String}
 })
 
-const Program= mongoose.model('Program', programSchema)
-module.exports= Program
+const Exercise = mongoose.model('Exercise', exerciseSchema)
+module.exports = Exercise
+
